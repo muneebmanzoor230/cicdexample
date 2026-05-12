@@ -3,11 +3,11 @@ on :
   push:
 
 jobs :
-  deploy : #job comment
+  deploy : #deploy is jobsname 
     runs-on : ubuntu-latest
     steps :
 
       - name : get code
-        uses : actions/checkout@v4
+        uses : actions/checkout@v4 #uses = use someone else's ready-made action/tool(You are using a prebuilt GitHub Action called checkout. This action is maintained by GitHub and is commonly used to check out your repository's code so that it can be used in subsequent steps of your workflow.)
       - name : print message
         run : echo "Hello World"
