@@ -1,0 +1,13 @@
+name : Example Workflow
+on :
+  push:
+
+jobs :
+  deploy : #job comment
+    runs-on : ubuntu-latest
+    steps :
+
+      - name : get code
+        uses : actions/checkout@v4
+      - name : print message
+        run : echo "Hello World"
